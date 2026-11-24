@@ -79,3 +79,23 @@ html[data-theme="light"] main .contact .contact-container .details .social .soci
 html[data-theme="light"] main .contact .contact-container .details .social .social-links .link .tik i { color: #1A1A1A !important; }
 html[data-theme="light"] footer .big-footer .stay-update form input { background-color: #fff; color: #1A1A1A; border: 1px solid var(--border-color); }
  @media (max-width: 991px) { header .nav-links i { display: block; } header .nav-links .links { display: none; flex-direction: column; align-items: stretch; gap: 0; border: 1px solid var(--border-color); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 10px 0; position: absolute; right: 0; left: auto; top: 45px; width: 170px; background-color: rgba(21,21,21,0.9); border-radius: 15px; } header .nav-links .show { display: flex; } header .nav-links .links a { padding: 10px 15px; margin-left: 0; } header .nav-links .links a:hover { margin-left: 0; transform: scale(1); } }
+
+/* Navbar: theme toggle + Get in Touch next to logo */
+header nav .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
+header nav .brand .theme-toggle { position: static; width: 38px; height: 38px; font-size: 18px; flex: 0 0 auto; box-shadow: none; }
+header nav .brand .get-in-touch { text-decoration: none; background: var(--primary-color); color: #fff; font-size: 14px; font-weight: 600; padding: 9px 16px; border-radius: 20px; white-space: nowrap; transition: 0.3s; }
+header nav .brand .get-in-touch:hover { background: var(--primary-hover); }
+@media (max-width: 991px) {
+  header nav { position: relative; width: 100%; margin-left: 0; transform: none; padding-right: 70px; background-color: transparent !important; }
+  header nav::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 20px; background-color: #cccccc0e; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+  html[data-theme="light"] header nav::before { background-color: #ffffffcc; }
+  header .nav-links { position: static; }
+  header .nav-links i { position: fixed; right: 16px; top: 24px; z-index: 1001; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 22px; border-radius: 50%; border: 1px solid var(--border-color); background: var(--secondary-bg); }
+  header .nav-links .links { position: fixed; right: 16px; left: auto; top: 76px; z-index: 1001; }
+}
+@media (max-width: 575px) {
+  header nav .logo a { font-size: 20px; }
+  header nav .brand { gap: 8px; }
+  header nav .brand .theme-toggle { width: 34px; height: 34px; font-size: 16px; }
+  header nav .brand .get-in-touch { font-size: 12px; padding: 8px 11px; }
+}

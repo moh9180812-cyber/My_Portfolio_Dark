@@ -99,3 +99,13 @@ header nav .brand .get-in-touch:hover { background: var(--primary-hover); }
   header nav .brand .theme-toggle { width: 34px; height: 34px; font-size: 16px; }
   header nav .brand .get-in-touch { font-size: 12px; padding: 8px 11px; }
 }
+
+
+/* Side drawer menu: links slide in from the right edge of the page */
+@media (max-width: 991px) {
+      header .nav-links .links { display: flex !important; position: fixed; top: 0; right: 0; left: auto; bottom: 0; width: min(280px, 80vw); height: 100vh; margin: 0; padding: 80px 0 20px; border-radius: 0; border: 0; border-left: 1px solid var(--border-color); background-color: var(--secondary-bg); transform: translateX(105%); visibility: hidden; transition: transform .3s ease, visibility .3s; z-index: 1000; overflow-y: auto; box-shadow: -6px 0 24px rgba(0,0,0,.4); }
+      header .nav-links .links.show { transform: translateX(0); visibility: visible; }
+      header .nav-links .links a { padding: 14px 24px; font-size: 18px; }
+      header .nav-links i { z-index: 1002; }
+      html[data-theme="light"] header .nav-links .links { background-color: #ffffff; }
+}

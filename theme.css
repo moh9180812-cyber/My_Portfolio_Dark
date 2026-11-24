@@ -90,8 +90,8 @@ header nav .brand .get-in-touch:hover { background: var(--primary-hover); }
   header nav::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 20px; background-color: #cccccc0e; backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
   html[data-theme="light"] header nav::before { background-color: #ffffffcc; }
   header .nav-links { position: static; }
-  header .nav-links i { position: fixed; right: 16px; top: 24px; z-index: 1001; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 22px; border-radius: 50%; border: 1px solid var(--border-color); background: var(--secondary-bg); }
-  header .nav-links .links { position: fixed; right: 16px; left: auto; top: 76px; z-index: 1001; }
+  header .nav-links i { position: fixed; right: 16px; top: 10px; z-index: 1001; width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; font-size: 22px; border-radius: 50%; border: 1px solid var(--border-color); background: var(--secondary-bg); }
+  header .nav-links .links { position: fixed; right: 16px; left: auto; top: 66px; z-index: 1001; }
 }
 @media (max-width: 575px) {
   header nav .logo a { font-size: 20px; }

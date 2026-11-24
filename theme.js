@@ -15,5 +15,19 @@
     paint();
   });
   paint();
-  document.body.appendChild(btn);
+  var logo = document.querySelector("header nav .logo");
+  if (logo) {
+    var brand = document.createElement("div");
+    brand.className = "brand";
+    logo.parentNode.insertBefore(brand, logo);
+    brand.appendChild(logo);
+    brand.appendChild(btn);
+    var git = document.createElement("a");
+    git.className = "get-in-touch";
+    git.href = "#contact";
+    git.textContent = "Get in Touch";
+    brand.appendChild(git);
+  } else {
+    document.body.appendChild(btn);
+  }
 })();

@@ -35,3 +35,24 @@ html[data-theme="light"] header nav .nav-links i { color: var(--text-color); }
     box-shadow: 0 2px 10px rgba(0,0,0,.3);
 }
 .theme-toggle:hover { border-color: var(--primary-hover); }
+html[data-theme="light"] .skills,
+html[data-theme="light"] .about .container .info,
+html[data-theme="light"] .hero .info,
+html[data-theme="light"] main .projects,
+html[data-theme="light"] main .contact { color: var(--text-color); }
+html[data-theme="light"] .about .container .info .about-p { color: var(--secondary-text); }
+html[data-theme="light"] .hero button a,
+html[data-theme="light"] .about .info button a,
+html[data-theme="light"] .skills .skills-box .info h3 + * { color: var(--text-color); }
+html[data-theme="light"] .skills .skills-box { background-color: #ffffffcc; }
+html[data-theme="light"] .skills .skills-box .info .skills span,
+html[data-theme="light"] .skills .container .skills-container .skill-box .skill-info .skills span { color: var(--text-color); }
+html[data-theme="light"] .skills .skills-box .info .skills-line { background-color: #d5d7db; }
+html[data-theme="light"] .contact input,
+html[data-theme="light"] .contact textarea { color: var(--text-color) !important; caret-color: var(--text-color) !important; }
+html[data-theme="light"] header .nav-links .links { background-color: rgba(255,255,255,0.92); }
+html[data-theme="light"] .about .container::after,
+html[data-theme="light"] .skills .container::after,
+html[data-theme="light"] .hero::after,
+html[data-theme="light"] main .projects::after,
+html[data-theme="light"] main .contact .container::after { background-color: #d5d7db; }

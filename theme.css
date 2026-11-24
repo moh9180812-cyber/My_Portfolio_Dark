@@ -1,0 +1,37 @@
+/* Light theme overrides (dark is the default) */
+html[data-theme="light"] {
+    --bg-color: #F6F6F8;
+    --secondary-bg: #FFFFFF;
+    --text-color: #1A1A1A;
+    --secondary-text: #55595F;
+    --border-color: #DADCE0;
+    --primary-color: #C62828;
+    --primary-hover: #E53935;
+}
+html[data-theme="light"] header nav { background-color: #ffffffcc; }
+html[data-theme="light"] .hero .info .name,
+html[data-theme="light"] .hero .info p,
+html[data-theme="light"] .hero .info .skills-t .skill span,
+html[data-theme="light"] header nav .nav-links .links a { color: var(--text-color); }
+html[data-theme="light"] .hero .info .name span,
+html[data-theme="light"] header nav .nav-links .links a.active { color: var(--primary-color); }
+html[data-theme="light"] header nav .nav-links i { color: var(--text-color); }
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background: var(--secondary-bg);
+    color: var(--text-color);
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,.3);
+}
+.theme-toggle:hover { border-color: var(--primary-hover); }
